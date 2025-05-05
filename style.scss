@@ -1,0 +1,110 @@
+// Variables
+$primary: #3498db;
+$danger: #e74c3c;
+$background: #f5f7fa;
+$text-color: #2c3e50;
+$gray-light: #ecf0f1;
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-stack;
+  background: linear-gradient(135deg, $background, #c3cfe2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+
+  h1 {
+    text-align: center;
+    color: $text-color;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    color: darken($text-color, 10%);
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    button {
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      color: white;
+
+      &:first-of-type {
+        background-color: $primary;
+
+        &:hover {
+          background-color: darken($primary, 10%);
+        }
+      }
+
+      &:last-of-type {
+        background-color: $danger;
+
+        &:hover {
+          background-color: darken($danger, 10%);
+        }
+      }
+    }
+  }
+
+  ul#jokeList {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      background-color: $gray-light;
+      border-left: 5px solid $primary;
+      padding: 15px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+}
