@@ -1,19 +1,78 @@
+/* Estilo base del cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
 }
 
-h1 {
-    color: #c0392b;
+/* Contenedor principal */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
 }
 
-label, select, button {
-    margin: 10px 0;
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Selector y botón */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
     font-size: 16px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-top: 10px;
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1f6391;
+}
+
+/* Lista de frases */
+ul#jokeList {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+ul#jokeList li {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    line-height: 1.5;
+    font-size: 15px;
 }
