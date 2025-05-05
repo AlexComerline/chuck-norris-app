@@ -1,87 +1,102 @@
-/* Estilo base del cuerpo */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+/* Reset básico */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    align-items: center;
 }
 
-/* Contenedor principal */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
 .container {
-    background-color: white;
-    padding: 30px;
+    background-color: #ffffff;
+    padding: 30px 40px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
     max-width: 600px;
 }
 
-/* Títulos */
-h1, h2 {
+h1 {
     text-align: center;
     color: #2c3e50;
+    margin-bottom: 30px;
 }
 
-/* Selector y botón */
 label {
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
     display: block;
+    margin-bottom: 8px;
 }
 
 select {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
     font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
 button {
-    display: block;
-    width: 100%;
     padding: 12px;
-    background-color: #2980b9;
-    color: white;
-    border: none;
     font-size: 16px;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: white;
 }
 
-button:hover {
-    background-color: #1f6391;
+button:first-of-type {
+    background-color: #3498db;
 }
 
-/* Lista de frases */
+button:first-of-type:hover {
+    background-color: #2980b9;
+}
+
+button:last-of-type {
+    background-color: #e74c3c;
+}
+
+button:last-of-type:hover {
+    background-color: #c0392b;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #34495e;
+    font-size: 20px;
+}
+
 ul#jokeList {
-    margin-top: 20px;
     list-style: none;
-    padding: 0;
+    padding-left: 0;
 }
 
 ul#jokeList li {
     background-color: #ecf0f1;
-    padding: 15px;
-    margin-bottom: 10px;
     border-left: 5px solid #3498db;
-    border-radius: 5px;
-    line-height: 1.5;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
     font-size: 15px;
+    line-height: 1.5;
 }
-
-button:nth-of-type(2) {
-    background-color: #e74c3c;
-}
-
-button:nth-of-type(2):hover {
-    background-color: #c0392b;
-}
-
