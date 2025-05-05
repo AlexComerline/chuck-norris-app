@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+}
+
+h1 {
+    color: #c0392b;
+}
+
+label, select, button {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-top: 10px;
+}
