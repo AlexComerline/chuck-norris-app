@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+.container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+.container h2 {
+  margin-bottom: 15px;
+  color: rgb(25.9032258065, 36.5, 47.0967741935);
+  font-size: 20px;
+}
+.container label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+.container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.container .buttons button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+.container .buttons button:first-of-type {
+  background-color: #3498db;
+}
+.container .buttons button:first-of-type:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+.container .buttons button:last-of-type {
+  background-color: #e74c3c;
+}
+.container .buttons button:last-of-type:hover {
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
+}
+.container ul#jokeList {
+  list-style: none;
+  padding-left: 0;
+}
+.container ul#jokeList li {
+  background-color: #ecf0f1;
+  border-left: 5px solid #3498db;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=style.css.map */
