@@ -22,7 +22,7 @@ chucknorris/
 - Apache o servidor compatible
 - Node.js + Sass (para compilar los estilos)
 
-## FUNCIONAMIENTO
+## Funcionamiento
 Selecciona una categoría y haz clic en “Obtener frase”.
 
 Las frases se mantendrán tras recargar la página.
