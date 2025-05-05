@@ -39,4 +39,10 @@ if ($action === 'get_saved_jokes') {
     exit;
 }
 
+if ($action === 'reset_jokes') {
+    $_SESSION['jokes'] = [];
+    echo json_encode(['success' => true]);
+    exit;
+}
+
 echo json_encode(['error' => 'Invalid request']);

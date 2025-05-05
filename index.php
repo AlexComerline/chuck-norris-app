@@ -13,12 +13,24 @@
         <label for="category">Selecciona una categoría:</label>
         <select id="category"></select>
         <button onclick="getJoke()">Obtener frase</button>
+        <button onclick="resetJokes()" style="margin-top: 10px; background-color: #e74c3c;">
+    Eliminar todas las frases
+</button>
     </div>
 
     <h2>Frases mostradas:</h2>
     <ul id="jokeList"></ul>
 
     <script>
+        async function resetJokes() {
+            const res = await fetch('api.php?action=reset_jokes');
+            const result = await res.json();
+
+            if (result.success) {
+                updateJokeList([]);
+            }
+        }
+
         async function loadCategories() {
             const res = await fetch('api.php?action=get_categories');
             const categories = await res.json();

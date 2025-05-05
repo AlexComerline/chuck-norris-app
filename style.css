@@ -76,3 +76,12 @@ ul#jokeList li {
     line-height: 1.5;
     font-size: 15px;
 }
+
+button:nth-of-type(2) {
+    background-color: #e74c3c;
+}
+
+button:nth-of-type(2):hover {
+    background-color: #c0392b;
+}
+
