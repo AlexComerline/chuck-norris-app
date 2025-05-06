@@ -1,0 +1,1 @@
+{"version":1,"defects":{"JokeManagerTest::testAddAndGetJokes":4,"JokeManagerTest::testResetJokes":4},"times":{"ApiTest::testGetCategoriesReturnsArray":0.253,"ApiTest::testGetJokeByCategoryReturnsString":0.266,"JokeManagerTest::testAddAndGetJokes":0.001,"JokeManagerTest::testResetJokes":0}}
