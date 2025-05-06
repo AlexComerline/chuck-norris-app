@@ -1,0 +1,26 @@
+# Ignorar dependencias de PHP
+/vendor/
+
+# Ignorar archivos de configuración de entorno
+.env
+.env.local
+
+# Ignorar CSS generado desde Sass
+/style.css
+*.css.map
+
+# Ignorar archivos temporales de sistemas
+.DS_Store
+Thumbs.db
+
+# Ignorar cachés y logs
+.cache/
+logs/
+*.log
+
+# Ignorar configuraciones del IDE
+.vscode/
+.idea/
+
+# Ignorar PHPUnit resultados
+phpunit.result.cache
