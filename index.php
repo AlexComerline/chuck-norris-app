@@ -7,15 +7,20 @@ require_once __DIR__ . '/src/JokeManager.php';
 $api = new Api();
 $jokeManager = new JokeManager();
 
-// Reset jokes
-if (isset($_POST['reset'])) {
-    $jokeManager->resetJokes();
-}
+// Handle form with Post-Redirect-Get pattern
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['reset'])) {
+        $jokeManager->resetJokes();
+    }
 
-// Fetch new joke
-if (isset($_POST['get_joke']) && !empty($_POST['category'])) {
-    $joke = $api->getJokeByCategory($_POST['category']);
-    $jokeManager->addJoke($joke);
+    if (isset($_POST['get_joke']) && !empty($_POST['category'])) {
+        $joke = $api->getJokeByCategory($_POST['category']);
+        $jokeManager->addJoke($joke);
+    }
+
+    // Redirect to avoid resubmission on refresh
+    header('Location: ' . $_SERVER['REQUEST_URI']);
+    exit;
 }
 
 $categories = $api->getCategories();
